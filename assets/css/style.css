@@ -428,14 +428,14 @@ input {
     font-size: var(--smaller-font-size);
 }
 
-/*=============== HABILIDADES ===============*/
-.habilidades__container{
+/*=============== EXPERIENCIAS ===============*/
+.experiencias__container{
     grid-template-columns: repeat(2, 340px);
     column-gap: 3rem;
     justify-content: center;
 }
 
-.habilidades__titulo {
+.experiencias__titulo {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-2);
@@ -443,6 +443,7 @@ input {
 
 .timeline__item {
     position: relative;
+    padding-left: 3rem;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -452,10 +453,45 @@ input {
 
 .timeline__item::before{
     content: '';
-    width: 1px;
+    color: var(--skin-color);
+    width: 5px;
     position: absolute;
-    left: .48rem;
+    left: 0.48rem;
     top: 0;
     height: 100%;
+}
+
+.punto__circular{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid var(--skin-color);
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    transition: .3s;
+}
+
+.timeline__item:hover .punto__circular{
+    background-color: var(--body-color);
+}
+
+.timeline__titulo{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+}
+
+.timeline__texto{
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.timeline__datos {
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+    font-size: var(--small-font-size);
     color: var(--skin-color);
 }
