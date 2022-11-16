@@ -577,3 +577,66 @@ input {
     display: block;
     background-color: var(--skin-color);
 }
+
+/*=============== TRABAJOS ===============*/
+.trabajos__container {
+    grid-template-columns: repeat(3, 330px);
+    gap: 1.8rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.trabajos__filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+}
+
+.trabajos__item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: .25rem .75rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+}
+
+.trabajos__card {
+    background-color: var(--box-color);
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+
+.portfolio__item-detalles {
+    display: none;
+}
+
+.trabajos__img {
+    border-radius: .5rem;
+    margin-bottom: var(--mb-1);
+}
+
+.trabajos__titulo {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+
+.trabajos__boton {
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.trabajos__boton-icono {
+    font-size: 1rem;
+    transform: .3s;
+}
+
+.trabajos__boton:hover .trabajos__boton-icono {
+    transform: translateX(.25rem);
+}

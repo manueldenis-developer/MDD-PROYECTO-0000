@@ -19,14 +19,14 @@ tabs.forEach(tab => {
         const target = document.querySelector(tab.dataset.target)
 
         tabContent.forEach(tabContents => {
-            tabContents.classList.remove("tecnologias__active")
+            tabContents.classList.remove('tecnologias__active')
         })
 
         target.classList.add('tecnologias__active')
 
 
         tabs.forEach(tab => {
-            tab.classList.remove("tecnologias__active")
+            tab.classList.remove('tecnologias__active')
         })
 
         tab.classList.add('tecnologias__active')
@@ -34,9 +34,25 @@ tabs.forEach(tab => {
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
+var mixer = mixitup('.trabajos__container', {
+    selectors: {
+        target: '.trabajos__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 
 /*===== Link Active Work =====*/
+const linkWork = document.querySelectorAll('.trabajos__item')
+
+function activeWork() {
+    linkWork.forEach(L => L.classList.remove('trabajos-active'))
+    this.classList.add('trabajos-active')
+}
+
+linkWork.forEach(L => L.addEventListener('click', activeWork))
 
 
 /*===== Work Popup =====*/
