@@ -429,7 +429,7 @@ input {
 }
 
 /*=============== EXPERIENCIAS ===============*/
-.experiencias__container{
+.experiencias__container {
     grid-template-columns: repeat(2, 340px);
     column-gap: 3rem;
     justify-content: center;
@@ -451,7 +451,7 @@ input {
     margin-bottom: 0;
 }
 
-.timeline__item::before{
+.timeline__item::before {
     content: '';
     color: var(--skin-color);
     width: 5px;
@@ -461,7 +461,7 @@ input {
     height: 100%;
 }
 
-.punto__circular{
+.punto__circular {
     position: absolute;
     left: 0;
     top: 0;
@@ -473,17 +473,17 @@ input {
     transition: .3s;
 }
 
-.timeline__item:hover .punto__circular{
+.timeline__item:hover .punto__circular {
     background-color: var(--body-color);
 }
 
-.timeline__titulo{
+.timeline__titulo {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-25);
 }
 
-.timeline__texto{
+.timeline__texto {
     font-size: var(--smaller-font-size);
     margin-bottom: var(--mb-1);
 }
@@ -497,19 +497,19 @@ input {
 }
 
 /*=============== TECNOLOGIAS ===============*/
-.tecnologias__container{
+.tecnologias__container {
     grid-template-columns: 360px 320px;
     column-gap: 3rem;
     justify-content: center;
 }
 
-.tecnologias__cabecera{
+.tecnologias__cabecera {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.tecnologias__cabecera:not(:last-child){
+.tecnologias__cabecera:not(:last-child) {
     margin-bottom: var(--mb-0-25);
 }
 
@@ -519,7 +519,7 @@ input {
     color: var(--skin-color);
 }
 
-.tecnologias__icono{
+.tecnologias__icono {
     margin-right: var(--mb-0-75);
 }
 
@@ -540,11 +540,11 @@ input {
     transform: rotate(-90deg);
 }
 
-.tecnologias [data-content]{
+.tecnologias [data-content] {
     display: none;
 }
 
-.tecnologias__active[data-content]{
+.tecnologias__active[data-content] {
     display: block;
 }
 
@@ -564,7 +564,7 @@ input {
 }
 
 .tecnologias__barra,
-.tecnologias__porcentaje{
+.tecnologias__porcentaje {
     height: 5px;
     border-radius: .25rem;
 }
@@ -573,7 +573,7 @@ input {
     background-color: var(--box-color);
 }
 
-.tecnologias__porcentaje{
+.tecnologias__porcentaje {
     display: block;
     background-color: var(--skin-color);
 }
