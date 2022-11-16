@@ -113,7 +113,7 @@ input {
     outline: none;
 }
 
-/*========== DISEÑO ==========*/
+/*=============== DISEÑO ===============*/
 
 .container {
     max-width: 1250px;
@@ -125,7 +125,27 @@ input {
     display: grid;
 }
 
-/*========== SIDEBAR ==========*/
+/*=============== CLASES REUSABLES DE CSS ===============*/
+
+.section {
+    padding: 6.5rem 0 2rem;
+}
+
+.section__titulo {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__titulo::before {
+    content: attr(data-heading);
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--skin-color);
+}
+
+/*=============== SIDEBAR ===============*/
 .sidebar {
     position: fixed;
     width: 100px;
@@ -213,12 +233,12 @@ input {
     margin: auto;
 }
 
-/*=========== MAIN ==========*/
+/*================ MAIN ===============*/
 .main {
     margin-left: 100px;
 }
 
-/*===== INICIO =====*/
+/*=============== INICIO ===============*/
 .inicio {
     background: url('../img/inicio-bg.jpg');
     background-size: cover;
@@ -320,7 +340,7 @@ input {
     margin: var(--mb-0-75);
 }
 
-/*===== BOTONES =====*/
+/*=============== BOTONES ===============*/
 .boton {
     display: inline-flex;
     align-items: center;
@@ -355,4 +375,87 @@ input {
 
 .boton__icono {
     font-size: 1.25rem;
+}
+
+/*=============== SOBRE MI ===============*/
+.sobremi__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
+
+.sobremi__img {
+    width: 480px;
+    border-radius: 0.75rem;
+    justify-self: center;
+}
+
+.sobremi__cabecera {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.sobremi__descripcion {
+    text-align: justify;
+    padding-right: 6rem;
+    margin-bottom: var(--mb-2);
+}
+
+.sobremi__info {
+    grid-template-columns: repeat(3, 140px);
+    column-gap: .5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.sobremi__caja {
+    text-align: center;
+    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--box-color);
+}
+
+.sobremi__icono {
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.sobremi__titulo {
+    font-size: var(--small-font-size);
+}
+
+.sobremi__subtitulo {
+    font-size: var(--smaller-font-size);
+}
+
+/*=============== HABILIDADES ===============*/
+.habilidades__container{
+    grid-template-columns: repeat(2, 340px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.habilidades__titulo {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-2);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: var(--mb-2-5);
+}
+
+.timeline__item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline__item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    left: .48rem;
+    top: 0;
+    height: 100%;
+    color: var(--skin-color);
 }
